@@ -1,0 +1,13 @@
+/* Empty. Add your own CSS if you like */
+
+/*tabs*/
+.tab-item-active{
+  color:#e6133c;
+}
+.tabs{
+  border-top: solid 1px #ccc!important;
+}
+.tab-item .icon{
+  font-size:28px;
+  height:auto;
+}

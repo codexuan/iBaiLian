@@ -9832,6 +9832,43 @@ a.button {
 #find .item-note.clearRight {
   float: none; }
 
+#findPage .listbar .row {
+  padding: 0 2px; }
+  #findPage .listbar .row:last-of-type {
+    margin-top: 8px; }
+  #findPage .listbar .row .col {
+    padding: 0 4px; }
+    #findPage .listbar .row .col .card {
+      margin: 0;
+      text-align: center; }
+      #findPage .listbar .row .col .card img {
+        width: 90%; }
+
+#findPage .list {
+  margin-top: 5px; }
+  #findPage .list .font16 {
+    font-size: 16px; }
+  #findPage .list .padding-left {
+    padding-left: 10px; }
+  #findPage .list .font22 {
+    font-size: 22px; }
+  #findPage .list .padding-right {
+    padding-right: 24px; }
+
+#findPage .datial-list {
+  background-color: #fff; }
+  #findPage .datial-list h3 {
+    font-size: 20px;
+    line-height: 50px;
+    margin-bottom: 0;
+    padding-left: 10px; }
+  #findPage .datial-list .act img {
+    width: 100%; }
+  #findPage .datial-list .act .desp {
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 24px; }
+
 /*tabs*/
 .tab-item-active {
   color: #e6133c; }
@@ -9845,7 +9882,8 @@ a.button {
 
 html, body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  font-family: "黑体"; }
 
 .pane, .view {
   background-color: #efeff4; }

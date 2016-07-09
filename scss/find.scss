@@ -17,3 +17,58 @@
     float: none;
   }
 }
+
+#findPage{
+  .listbar{
+    .row{
+    padding:0 2px;
+    &:last-of-type{
+      margin-top:8px;
+    }
+    .col{
+      padding:0 4px;
+      .card{
+        margin:0;
+        text-align: center;
+        img{
+          width:90%;
+        }
+      }
+    }
+  }
+  }
+  .list{
+    margin-top: 5px;
+    .font16{
+      font-size:16px;
+    }
+    .padding-left{
+      padding-left:10px;
+    }
+    .font22{
+      font-size:22px;
+    }
+    .padding-right{
+      padding-right: 24px;
+    }
+  }
+  .datial-list{
+    background-color: #fff;
+    h3{
+      font-size:20px;
+      line-height:50px;
+      margin-bottom: 0;
+      padding-left:10px;
+    }
+    .act{
+      img{
+        width:100%;
+      }
+      .desp{
+        font-size:18px;
+        padding:0 20px;
+        line-height: 24px;
+      }
+    }
+  }
+}

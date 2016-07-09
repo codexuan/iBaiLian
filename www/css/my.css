@@ -1,0 +1,9 @@
+html{
+  font-size: 100px;
+}
+#my ion-content .welcome{
+  width: 100%;
+  height: 1rem;
+  background: url(../img/centerPic.jpg);
+  background-size: 100%;
+}

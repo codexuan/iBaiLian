@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-angular.module('starter.homeCtrl', [])
-.controller('homeController',['$scope',function( $scope ){
-  
-}])
-=======
+
 angular.module('starter.homeCtrl', ['ionic'])
 .controller('homeController',['$scope','$http', function( $scope,$http,$ionicSlideBoxDelegate ){
 
@@ -34,4 +29,3 @@ angular.module('starter.homeCtrl', ['ionic'])
     });
 
   }]);
->>>>>>> master

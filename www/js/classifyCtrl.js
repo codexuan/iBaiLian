@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-angular.module('starter.classifyCtrl', [])
-.controller('classifyController',['$scope',function( $scope ){
 
-}])
-=======
 angular.module('starter.classifyCtrl', ['ionic'])
 .controller('classifyController',['$scope','$http',function( $scope,$http){
   $scope.did=function(re){
@@ -19,4 +14,3 @@ $http.get('./data/classify.json')
 )
 }])
 .config(function(){})
->>>>>>> master

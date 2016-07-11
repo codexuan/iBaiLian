@@ -1,6 +1,4 @@
 {
   "name": "iBailian",
-  "app_id": "",
-  "gulpStartupTasks": ["sass", "watch"]
-
+  "app_id": ""
 }

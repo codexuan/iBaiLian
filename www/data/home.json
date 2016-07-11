@@ -1,0 +1,23 @@
+{
+  "error":"home数据加载错误",
+  "datalist":
+  {
+    "list1":[{
+        "img_id":"./img/code2.jpg"
+      },{
+        "img_id":"./img/common_img_coupon3.png"
+        },{
+        "img_id":"./img/code2.jpg"
+          }],
+    "list2":[{
+
+      },{
+
+        }],
+    "list3":[{
+
+      },{
+
+        }]
+  }
+}

@@ -1,1 +1,22 @@
-<div>首页.....</div>
+<div id="home">
+  <div ng-controller="homeController">
+
+<!--  banner 轮播图  -->
+<!--  banner 轮播图  -->
+
+     <ion-slide-box on-slide-changed="slideHasChanged($index)" auto-play="true"
+      does-continue="true" slide-interval=2000 show-pager="true"
+      pager-click="pageClick(index)" active-slide="model.activeIndex"
+      delegate-handle="delegateHandler">
+        <ion-slide ng-repeat="li in datalist.list1" style="width:100%; height:160px">
+          <a  target="_blank"  style="width:100%; height:160px">
+
+              <img ng-src="{{li.img_id}}" style="width:100%; height:160px">
+          </a>
+        </ion-slide>
+  </ion-slide-box>
+
+
+
+  </div>
+</div>

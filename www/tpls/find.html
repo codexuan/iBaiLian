@@ -1,1 +1,19 @@
-<div>发现</div>
+<div id="find">
+  <div class="bar bar-header bar-stable">
+    <h1 class="title font20"><b>发现</b></h1>
+  </div>
+  <div ng-controller="findController">
+    <div class="list card m5p0 has-header" ng-repeat="emp in datalist">
+      <a class="item item-icon-left item-icon-right" href="#/findPage" ng-repeat="temp in emp">
+        <i class="icon">
+          <img ng-src="{{temp.src}}" alt="">
+        </i>
+        <b>{{temp.title}}</b>
+        <span class="item-note clearRight">
+          {{temp.description}}
+        </span>
+        <i class="icon item-note ion-ios-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<div id="findPage"  ng-controller="findPageCtroller">
+  <div class="bar bar-header bar-stable basebg ">
+    <button class="button button-clear icon  ion-ios-arrow-left "></button>
+    <h1 class="title"><b font16>逛在百联</b></h1>
+    <button class="button button-clear icon  ion-android-more-vertical "></button>
+  </div>
+
+  <ion-content
+    class="has-header"
+    scrollbar-y = false;
+  >
+    <div class="listbar">
+      <div class="row" ng-repeat="emp in listpage">
+        <div class="col col-33" ng-repeat="temp in emp">
+          <div class="tabs-icon-top card">
+            <div class="icon">
+              <img ng-src="{{temp.src}}">
+            </div>
+            {{temp.title}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="list">
+      <a class="font16 padding-left item item-icon-right" href="javascript:;">
+        我收藏的门店
+        <i class="padding-right icon font16">全部门店</i>
+        <i class="icon ion-ios-arrow-right font22"></i>
+      </a>
+      <a class="item item-icon-right" href="javascript:;">
+          <b>点击登陆查看已关注的门店</b>
+      </a>
+    </div>
+    
+    <div class="datial-list">
+        <h3>门店热门活动</h3>
+        <div class="act" ng-repeat="emp in detaillist">
+          <img ng-src="{{emp.src}}" alt="">
+          <p class="desp">{{emp.description}}</p>
+        </div>
+    </div>
+
+  </ion-content>
+</div>

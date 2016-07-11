@@ -1,0 +1,67 @@
+{
+  "error":"findPage数据家在错误",
+  "listpage":{
+    "list1":[
+      {
+        "title":"找百联",
+        "src":"./img/icon_gps.png"
+      },
+      {
+        "title":"订美食",
+        "src":"./img/icon_food.png"
+      },
+      {
+        "title":"电影票",
+        "src":"./img/icon_moive.png"
+      }
+    ],
+    "list2":[
+      {
+        "title":"会员卡",
+        "src":"./img/icon_card.png"
+      },
+      {
+        "title":"摇一摇",
+        "src":"./img/icon_shake.png"
+      },
+      {
+        "title":"领券中心",
+        "src":"./img/icon_ticket.png"
+      }
+    ]
+  },
+  "detaillist":[
+    {
+      "src":"./img/find-act2.png",
+      "description":"【淮海755】Bl-1F Under Armour 季末精选特惠"
+    },
+    {
+      "src":"./img/find-act3.png",
+      "description":"【淮海755】Bl-1F Under Armour 季末精选特惠"
+    },
+    {
+      "src":"./img/find-act4.png",
+      "description":"【淮海755】Bl-1F Under Armour 季末精选特惠"
+    },
+    {
+      "src":"./img/find-act5.png",
+      "description":"【淮海755】Bl-1F Under Armour 季末精选特惠"
+    },
+    {
+      "src":"./img/find-act2.png",
+      "description":"【淮海755】Bl-1F Under Armour 季末精选特惠"
+    },
+    {
+      "src":"./img/find-act3.png",
+      "description":"【淮海755】Bl-1F Under Armour 季末精选特惠"
+    },
+    {
+      "src":"./img/find-act4.png",
+      "description":"【淮海755】Bl-1F Under Armour 季末精选特惠"
+    },
+    {
+      "src":"./img/find-act5.png",
+      "description":"【淮海755】Bl-1F Under Armour 季末精选特惠"
+    }
+  ]
+}

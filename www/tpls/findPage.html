@@ -9,9 +9,14 @@
     class="has-header"
     scrollbar-y = false;
   >
+  <ion-refresher
+      pulling-text="下拉刷新"
+      on-refresh="doRefresh()"
+      refreshing-text = "刷新完成">
+  </ion-refresher>
     <div class="listbar">
       <div class="row" ng-repeat="emp in listpage">
-        <div class="col col-33" ng-repeat="temp in emp">
+        <div class="col col-33" ng-repeat="temp in emp" ng-click="tips()">
           <div class="tabs-icon-top card">
             <div class="icon">
               <img ng-src="{{temp.src}}">
@@ -32,14 +37,23 @@
           <b>点击登陆查看已关注的门店</b>
       </a>
     </div>
-    
+
     <div class="datial-list">
         <h3>门店热门活动</h3>
-        <div class="act" ng-repeat="emp in detaillist">
+        <div class="act" ng-repeat="emp in detaillist" ng-click="tips()">
           <img ng-src="{{emp.src}}" alt="">
           <p class="desp">{{emp.description}}</p>
         </div>
+<!-- 加载更多 -->
+        <div class="act" ng-repeat="x in items" ng-click="tips()">
+          <img ng-src="{{x.src}}" alt="">
+          <p class="desp">{{x.description}}</p>
+        </div>
     </div>
-
+    <!-- 加载更多 -->
+    <ion-infinite-scroll
+    on-infinite="loadMore()"
+    distance="10%">
+  </ion-infinite-scroll>
   </ion-content>
 </div>

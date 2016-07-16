@@ -22,7 +22,7 @@ angular.module('starter.findCtrl', ['ionic'])
       controller : 'findPageCtroller'
       })
   }])
-  .controller('findPageCtroller',['$scope','$http','$ionicLoading','$timeout',function( $scope ,$http, $ionicLoading , $timeout){
+  .controller('findPageCtroller',['$scope','$http','$ionicLoading','$timeout','$ionicModal',function( $scope ,$http, $ionicLoading , $timeout ,$ionicModal){
       $http.get('./data/findPage.json')
         .then(function( res ){
            $scope.listpage = res.data.listpage;
@@ -56,15 +56,35 @@ angular.module('starter.findCtrl', ['ionic'])
         });
       });
     }
+    $ionicModal.fromTemplateUrl('./tpls/login.html', {
+      scope: $scope,
+      animation: 'slide-in-up'
+    }).then(function(modal) {
+      $scope.modalLogin = modal;
+    });
+    //注册
+    $ionicModal.fromTemplateUrl('tpls/register.html', {
+      scope: $scope,
+      animation: 'slide-in-up'
+    }).then(function(modal) {
+      $scope.modalReg = modal;
+      $scope.modalLogin.hide();
+    });
         // 点击事件
     $scope.tips = function(){
+
       $ionicLoading.show(
         {
           template:"请先登录"
         }
       ).then(function () {
         $timeout(function () {
-            $ionicLoading.hide();
+            $ionicLoading.hide().then(function(){
+              $scope.modalLogin.show();
+            });
+              $scope.closeModal = function() {
+                $scope.modalLogin.hide();
+              };
           }, 1000);
       })
     }
